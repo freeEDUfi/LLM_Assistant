@@ -1,7 +1,4 @@
 import sys
-
-sys.path.append('/mnt/storage1/local_LLM/GPU_LLAMA/GPU_LLAMA/LLM_Assistant/libraries')
-
 from kivy.app import App
 from kivy.core.window import Window
 from kivy.uix.floatlayout import FloatLayout
