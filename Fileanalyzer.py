@@ -1,7 +1,4 @@
 import sys
-
-sys.path.append('/mnt/storage1/local_LLM/GPU_LLAMA/GPU_LLAMA/LLM_Assistant/libraries')
-
 import threading
 from kivy.clock import Clock
 from kivy.uix.boxlayout import BoxLayout
@@ -18,7 +15,7 @@ n_batch = 1550
 n_ctx = 2000
 
 llm = LlamaCpp(
-    model_path="/mnt/storage1/local_LLM/GPU_LLAMA/GPU_LLAMA/LLM_Assistant/llama-2-7b-chat.Q4_K_M.gguf",
+    model_path="llama-2-7b-chat.Q4_K_M.gguf",
     n_gpu_layers=n_gpu_layers,
     n_batch=n_batch,
     n_ctx=n_ctx,
