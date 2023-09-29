@@ -1,8 +1,4 @@
 import sys
-
-# Append the path to the system path
-sys.path.append('/mnt/storage1/local_LLM/GPU_LLAMA/GPU_LLAMA/LLM_Assistant/libraries')
-
 from threading import Thread
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
@@ -70,7 +66,7 @@ class LLMChatbotWidget(BoxLayout):
             n_ctx = 700
 
             self.llm = LlamaCpp(
-                model_path="/mnt/storage1/local_LLM/GPU_LLAMA/GPU_LLAMA/LLM_Assistant/llama-2-7b-chat.Q4_K_M.gguf",
+                model_path="llama-2-7b-chat.Q4_K_M.gguf",
                 n_gpu_layers=n_gpu_layers,
                 n_batch=n_batch,
                 n_ctx=n_ctx,
