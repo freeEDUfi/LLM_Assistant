@@ -3,3 +3,5 @@ llama-cpp-python==0.1.83
 numpy==1.24.4
 typing-extensions==4.7.1
 kivy
+python-docx
+openpyxl
